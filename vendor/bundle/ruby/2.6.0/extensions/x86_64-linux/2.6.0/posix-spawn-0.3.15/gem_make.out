@@ -1,0 +1,49 @@
+current directory: /home/jair/PERSO/hydejack-starter-kit/vendor/bundle/ruby/2.6.0/gems/posix-spawn-0.3.15/ext
+/home/jair/.rbenv/versions/2.6.10/bin/ruby -I /home/jair/.rbenv/versions/2.6.10/lib/ruby/2.6.0 -r ./siteconf20230320-12573-1heiwx1.rb extconf.rb
+creating Makefile
+
+current directory: /home/jair/PERSO/hydejack-starter-kit/vendor/bundle/ruby/2.6.0/gems/posix-spawn-0.3.15/ext
+make "DESTDIR=" clean
+
+current directory: /home/jair/PERSO/hydejack-starter-kit/vendor/bundle/ruby/2.6.0/gems/posix-spawn-0.3.15/ext
+make "DESTDIR="
+compiling posix-spawn.c
+posix-spawn.c: In function ‘rb_posixspawn_pspawn’:
+posix-spawn.c:354:9: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+  354 |         long argc = RARRAY_LEN(argv);
+      |         ^~~~
+In file included from /usr/include/string.h:535,
+                 from posix-spawn.c:11:
+In function ‘strncpy’,
+    inlined from ‘each_env_i’ at posix-spawn.c:314:3:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin_strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+posix-spawn.c: In function ‘each_env_i’:
+posix-spawn.c:277:33: note: length computed here
+  277 |         const size_t name_len = strlen(name);
+      |                                 ^~~~~~~~~~~~
+In file included from /usr/include/string.h:535,
+                 from posix-spawn.c:11:
+In function ‘strncpy’,
+    inlined from ‘each_env_i’ at posix-spawn.c:316:3:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin_strncpy’ output truncated before terminating nul copying as many bytes from a string as its length [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+posix-spawn.c: In function ‘each_env_i’:
+posix-spawn.c:307:35: note: length computed here
+  307 |                 size_t cval_len = strlen(cval);
+      |                                   ^~~~~~~~~~~~
+posix-spawn.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+linking shared-object posix_spawn_ext.so
+
+current directory: /home/jair/PERSO/hydejack-starter-kit/vendor/bundle/ruby/2.6.0/gems/posix-spawn-0.3.15/ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 posix_spawn_ext.so ./.gem.20230320-12573-hu0l14
