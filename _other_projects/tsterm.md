@@ -11,7 +11,7 @@ image:
     480w:    /assets/img/past_projects/qqq-cg@0,25x.jpg
 caption:     Helping TSTERM with DevOps. 
 description: >
-  For each of the main financial instruments, tsterm is able to shortlist the main financial predictors. It uses this knowledge to extract real and relevant financial events that are likely to impact instrument's performance. tsterm make suggestions for portfolio managements that beats the market, as described in the white paper on the website. 
+  tsterm proposes analyses of financial instruments and trading recommendations. 
 links:
   - title:   tsterm Website
     url:     https://tsterm.com/
