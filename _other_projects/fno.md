@@ -42,5 +42,4 @@ into the text processing domain, as FNO scaling properties could be a game chang
 
 I view the work also as a practical investigation of the nature of Language.
 
-After having proven that these architecture can learn text, I am working on architecture improvements and benchmarking.
-
+I have achieved mixed results but am continuing to work on this in my free time. 
